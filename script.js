@@ -225,3 +225,19 @@ person.gender = "male";
 person.address.country;
 delete person.age;
 console.log(person);
+
+// EVENTS
+// AN EEVENT IS AN ACTION THAT HAPPENS IN THE BROWSER WHICH JAVASCRIPT CAN DETECT AND RESPOND TO
+
+// types of events
+// click ......when a user click on an element
+// mouseover.....when the mouse moves  over an element
+// keydown......when a keyboard key is pressed down
+// submit.....when a form is submitted
+// load .....when a page finishes loading
+
+// EVENT HANDLER / LISTENER
+// An event handler is the function that runs when an event occurs
+
+// onclick ...eventlistener
+// onsubmit
