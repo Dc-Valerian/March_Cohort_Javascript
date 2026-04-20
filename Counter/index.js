@@ -66,6 +66,7 @@ document.addEventListener("keydown", function (ada) {
 // STORE THE COUNT IN LOCAL STORAGE
 let count5 = parseInt(localStorage.getItem("val")) || 0;
 
+
 // ParseInt convert a value to a number
 // "5" -> 5
 const countDisplay5 = document.getElementById("count5");
