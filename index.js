@@ -109,3 +109,4 @@ toggleBtn.addEventListener("click", function () {
 
 
 // classlist is a special property used to manaage classes of an element
+

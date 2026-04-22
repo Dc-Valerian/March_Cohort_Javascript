@@ -241,3 +241,65 @@ console.log(person);
 
 // onclick ...eventlistener
 // onsubmit
+
+// ARRAY
+// AN Array is a way to store multiple values in a single variable
+
+// Without Array
+let fruit1 = "Apple";
+let fruit2 = "Banana";
+let fruit3 = "Cherry";
+
+// With Array
+let fruits = ["Apple", "Banana", "Cherry"];
+console.log(fruits.length);
+
+// Array Methods
+// push().....adds an element to the end of an array
+fruits.push("Orange");
+console.log(fruits);
+
+// pop().....removes the last element from an array
+fruits.pop();
+console.log(fruits);
+
+// unshift().....adds an element to the beginning of an array
+fruits.unshift("Mango");
+console.log(fruits);
+
+// shift().....removes the first element from an array
+fruits.shift();
+console.log(fruits);
+
+// includes()....check for existencee of an element in an array
+console.log(fruits.includes("Banana"));
+
+// indexof()....find the index position of an element in an array
+console.log(fruits.indexOf("Cherry"));
+
+console.log(fruits);
+
+// Slice
+// Splice
+// split
+
+// Math()..is a inbuilt javascript object that helps with mathematical operations
+
+// Math.random()...generates a random number between 0 and 1
+0.28883;
+0.999932232332;
+0.3545434334;
+
+// Math.floor()...rounds a number down to the nearest integer
+console.log(Math.floor(4.7)); // 4
+console.log(Math.floor(9.2)); // 9
+
+// Math.ceil()...rounds a number up to the nearest integer
+console.log(Math.ceil(4.2)); // 5
+console.log(Math.ceil(9.8)); // 10
+
+// Math.round()...rounds a number to the nearest integer
+console.log(Math.round(4.2));
+
+let randomNumber = Math.floor(Math.random() * 100);
+console.log(randomNumber);
