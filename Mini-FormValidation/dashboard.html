@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        background-color: whitesmoke;
+        text-align: center;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Arial, sans-serif;
+      }
+
+      .dashbaord {
+        border-radius: 30px;
+        max-width: 600px;
+        padding: 30px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+      }
+
+      h2 {
+        color: #333;
+      }
+      p {
+        font-size: 18px;
+        margin-top: 10px;
+      }
+      button {
+        margin-top: 20px;
+        background-color: red;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        color: white;
+        padding: 10px 20px;
+      }
+
+      button:hover {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dashbaord">
+      <h2>Welcome to your Dashbaord</h2>
+      <p id="welcome"></p>
+
+      <button onclick="logout()">Logout</button>
+    </div>
+
+    <script>
+      const fullname = localStorage.getItem("fullname");
+      const email = localStorage.getItem("email");
+
+      if (fullname) {
+        document.getElementById("welcome").textContent =
+          `Hello ${fullname},! Welcome back to your dashboard. Your registered email is ${email}.`;
+      } else {
+        window.location.href = "index.html";
+      }
+
+      function logout() {
+        localStorage.clear();
+        window.location.href = "index.html";
+      }
+    </script>
+  </body>
+</html>
