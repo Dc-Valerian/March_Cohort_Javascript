@@ -33,3 +33,7 @@ function generateCards() {
 }
 
 generateBtn.addEventListener("click", generateCards);
+
+
+
+hoisting
